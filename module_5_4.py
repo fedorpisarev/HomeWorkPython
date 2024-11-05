@@ -7,7 +7,6 @@ class House:
 
     def __new__(cls, *args, **kwargs): # ,*args, **kwargs
         cls.houses_history.append(args[0])
-        print(*cls.houses_history)
         return super().__new__(cls)
 
 
@@ -65,3 +64,4 @@ print(House.houses_history)
 # Удаление объектов
 del h2
 del h3
+print(House.houses_history)
